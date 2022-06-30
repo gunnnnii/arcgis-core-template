@@ -38,3 +38,22 @@ git add .
 git commit -am '🎉'
 git push origin gh-pages
 ```
+
+#### Creating `gh-pages` branch
+
+If you did not fork the template with all branches, here are the steps to setup an orphan `gh-pages` branch:
+
+
+```
+git checkout --orphan gh-pages
+git rm -rf . 
+git commit --allow-empty -m "Init empty branch"
+git push origin gh-pages
+```
+
+Return to `main` and checkout `gh-pages` in `dist` folder.
+
+```
+git checkout main
+echo "dist/" >> .gitignore
+```
