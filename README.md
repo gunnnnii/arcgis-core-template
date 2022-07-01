@@ -13,7 +13,7 @@ npm install
 npm run dev
 ```
 
-Then open your browser at http://localhost:3002/
+Then open your browser at http://localhost:3000/
 
 ## Create productive build
 
