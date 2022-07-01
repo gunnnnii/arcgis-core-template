@@ -25,7 +25,7 @@ The `dist` folder then contains all the files for the web app which can either b
 
 In order to use the `gh-pages` approach, see the following instructions. Make sure you remove an existing `dist` folder if it has been created from a previous build.
 
-## Deploy to GitHub pages
+## Deploy to [GitHub Pages](https://pages.github.com/)
 
 ### Create `gh-pages` branch
 
