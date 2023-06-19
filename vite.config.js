@@ -2,5 +2,8 @@ export default {
   server: {
     port: 3000
   },
-  base: "./"
+  base: "./",
+  build: {
+    target: "es2020",
+  }
 }

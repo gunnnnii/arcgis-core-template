@@ -49,4 +49,4 @@ whenOnce(() => !view.updating).then(() => {
   loader?.parentElement?.removeChild(loader);
 });
 
-window["view"] = view;
+(window as any)["view"] = view;
