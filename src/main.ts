@@ -29,24 +29,24 @@ const map = new WebScene({
 });
 
 const view = new SceneView({
-  container: "viewDiv",
+  container: "view-div",
   map,
   qualityProfile: "high",
 });
 
-map.when().then(() => {
+void map.when().then(() => {
   map.ground.surfaceColor = new Color([220, 220, 220]);
 });
 
-map.loadAll().then(() => {
+void map.loadAll().then(() => {
   const slides = map.presentation.slides;
   const slide = slides.getItemAt(Math.floor(Math.random() * slides.length));
-  slide.applyTo(view, { animate: false });
+  void slide.applyTo(view, { animate: false });
 });
 
-whenOnce(() => !view.updating).then(() => {
+void whenOnce(() => !view.updating).then(() => {
   const loader = document.getElementById("loader");
   loader?.parentElement?.removeChild(loader);
 });
 
-(window as any)["view"] = view;
+(window as any).view = view;
